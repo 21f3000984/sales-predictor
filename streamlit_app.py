@@ -10,7 +10,7 @@ import joblib
 
 
 def load_data():
-    data = pd.read_csv('https://github.com/21f3000984/sales-predictor/blob/main/BDM.csv')
+    data = pd.read_csv('BDM.csv')
     return data
 
 def train_model(data):
@@ -43,7 +43,7 @@ def train_model(data):
 
 
 def load_model():
-    return joblib.load('preprocessor\sales_predictor.pkl')
+    return joblib.load('sales_predictor.pkl')
 
 data = load_data()
 model = load_model()
